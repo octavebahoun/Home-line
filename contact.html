@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLine- Connecté votre Maison à internet </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <div class="logo-icon">HomeLine</div>
+                <span class="logo-text">Votre Maison connecté à Internet</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="panel.html" class="nav-link">Controle Pannel</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+ <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Nous rejoindre ? N'hésitez pas à nous contacter</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Restons en contact</h2>
+                    <p>Avez vous une préocupation ? Ecrivez nous !.</p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon gradient-blue">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>iotconnect@gmail.com</p>
+                                <p>contactiotconnect@flipi.org</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon gradient-green">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Téléphone</h3>
+                                <p>+229 0147797082</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon gradient-purple">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Adresse</h3>
+                                <p>123 AGnivedji</p>
+                                <p>75001 Lokossa , Bénin</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon gradient-red">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Horaires</h3>
+                                <p>Lundi - Vendredi : 9h - 18h</p>
+                                <p>Samedi : 10h - 16h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Envoyez-nous un message</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <i class="fas fa-user"></i> Prénom
+                                </label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <i class="fas fa-user"></i> Nom
+                                </label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Téléphone (optionnel)
+                            </label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Sujet
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="rejoindre">Recrutement</option>
+                                <option value="collaboration">Proposition de collaboration</option>
+                                <option value="partenariat">Partenariat</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="autre">Bénéficier de nos services</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Je souhaite recevoir la newsletter </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Notre Localisation</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>IOT-connect Home</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-directions"></i>
+                        Obtenir l'itinéraire
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">HomeLine</div>
+                        <span>HomeLine</span>
+                    </div>
+                    <p>My-Home! Connectez-moi</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="panel.html" class="nav-link">Controle Pannel</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 HomeLine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

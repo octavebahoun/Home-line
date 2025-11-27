@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLine- Connecté votre Maison à internet </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <div class="logo-icon">HomeLine</div>
+                <span class="logo-text">Votre Maison connecté à Internet</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="panel.html" class="nav-link">Controle Pannel</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <div>
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Envoyez-nous un message</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <i class="fas fa-user"></i> Prénom
+                                </label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <i class="fas fa-user"></i> Nom
+                                </label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Téléphone (optionnel)
+                            </label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">HomeLine</div>
+                        <span>HomeLine</span>
+                    </div>
+                    <p>My-Home! Connectez-moi</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="panel.html" class="nav-link">Controle Pannel</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 HomeLine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
