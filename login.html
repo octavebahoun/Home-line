@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeLine- Connecté votre Maison à internet </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
@@ -19,16 +19,14 @@
             </div>
             
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="index.html" class="nav-link">Accueil</a>
                 <a href="panel.html" class="nav-link">Controle Pannel</a>
-                <a href="login.html" class="nav-link">Login</a>
+                <a href="login.html" class="nav-link active">Login</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-sun"></i>
-                </button>
+
             </div>
             
-            <button class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle"  id="menuToggle">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -45,37 +43,26 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">
-                                    <i class="fas fa-user"></i> Prénom
+                                    <i class="fas fa-user"></i> Email
                                 </label>
                                 <input type="text" id="firstName" name="firstName" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="lastName">
-                                    <i class="fas fa-user"></i> Nom
+                                    <i class="fas fa-user"></i> Mot de passe
                                 </label>
                                 <input type="text" id="lastName" name="lastName" required>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">
-                                <i class="fas fa-envelope"></i> Email
-                            </label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">
-                                <i class="fas fa-phone"></i> Téléphone (optionnel)
-                            </label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-submit">
+                      <a href="panel.html">
+                                                <button type="submit" class="btn btn-primary btn-submit" onclick="alert('Connexion démo !')">
                             <i class="fas fa-paper-plane"></i>
-                            Envoyer le message
+                            Login
                         </button>
+                      </a>
+
                     </form>
                 </div>
             </div>
